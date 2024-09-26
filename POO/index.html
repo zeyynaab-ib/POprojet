@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier d'Achat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mon Panier d'Achat</h1>
+
+        <div id="products">
+            <!-- Produits disponibles -->
+            <div class="product" data-id="1" data-name="Bracelet en Or" data-price="50">
+                <img src="bracelet.jpg" alt="Bracelet en Or">
+                <h2>Bracelet en Or</h2>
+                <p>Prix: 50€</p>
+                <button class="add-to-cart">Ajouter au panier</button>
+            </div>
+
+            <div class="product" data-id="2" data-name="Collier en Argent" data-price="75">
+                <img src="colier.png" alt="Collier en Argent">
+                <h2>Collier en Argent</h2>
+                <p>Prix: 75€</p>
+                <button class="add-to-cart">Ajouter au panier</button>
+            </div>
+
+            <div class="product" data-id="3" data-name="Boucles d’Oreilles en Diamant" data-price="40">
+                <img src="boucles.jpg" alt="Boucles d’Oreilles en Diamant">
+                <h2>Boucles d’Oreilles en Diamant</h2>
+                <p>Prix: 40€</p>
+                <button class="add-to-cart">Ajouter au panier</button>
+            </div>
+        </div>
+
+        <h2>Panier</h2>
+        <div id="cart">
+            <p id="empty-cart-message">Le panier est vide.</p>
+            <ul id="cart-items"></ul>
+            <p>Total: <span id="total-price">0</span>€</p>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
